@@ -1,6 +1,17 @@
 import { useState, useEffect } from "react"
 import "./App.css"
 import AUTOMATA from "./automata"
+import q0 from "/assets/img/q0.png"
+import q1 from "/assets/img/q1.png"
+import q2 from "/assets/img/q2.png"
+import q3 from "/assets/img/q3.png"
+import q4 from "/assets/img/q4.png"
+import q5 from "/assets/img/q5.png"
+import q6 from "/assets/img/q6.png"
+import q7 from "/assets/img/q7.png"
+import q8 from "/assets/img/q8.png"
+import q9 from "/assets/img/q9.png"
+import q10 from "/assets/img/q10.png"
 
 function App() {
   const [palabra, setpalabra] = useState("")
@@ -162,7 +173,18 @@ function App() {
       <div class="row justify-content-center" style={{ background: funcionExtendida.length - 1 != palabra.length ? "#ff0000" : "#04407c" }}>
         <div className="col-12 text-center">
           <h2 class="section-heading text-uppercase text-white fw-normal py-0 my-0">AUTOMATA</h2>
-          <img src={`../assets/${estadoActual}.png`} id="umg" alt="Girl in a jacket" width="75%" />
+
+          {estadoActual == "q0" && <img src={q0} id="umg" width="75%" />}
+          {estadoActual == "q1" && <img src={q1} id="umg" width="75%" />}
+          {estadoActual == "q2" && <img src={q2} id="umg" width="75%" />}
+          {estadoActual == "q3" && <img src={q3} id="umg" width="75%" />}
+          {estadoActual == "q4" && <img src={q4} id="umg" width="75%" />}
+          {estadoActual == "q5" && <img src={q5} id="umg" width="75%" />}
+          {estadoActual == "q6" && <img src={q6} id="umg" width="75%" />}
+          {estadoActual == "q7" && <img src={q7} id="umg" width="75%" />}
+          {estadoActual == "q8" && <img src={q8} id="umg" width="75%" />}
+          {estadoActual == "q9" && <img src={q9} id="umg" width="75%" />}
+          {estadoActual == "q10" && <img src={q10} id="umg" width="75%" />}
         </div>
       </div>
 
